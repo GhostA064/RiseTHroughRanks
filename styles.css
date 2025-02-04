@@ -1,10 +1,12 @@
-/* Updated styles.css - Matching Approved Design */
+/* Updated styles.css - Premium Design Matching Approved Mobile Version */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F1; /* Warm Sand */
+    background: linear-gradient(180deg, #F5F5F1, #EAEAEA); /* Subtle texture effect */
     color: #333;
 }
 
@@ -13,8 +15,9 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -48,7 +51,17 @@ section {
     margin: 30px auto;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 85%;
+}
+
+.hero {
+    background: url('path-to-texture.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
 }
 
 .course-list {
@@ -63,29 +76,32 @@ section {
     padding: 25px;
     border-radius: 12px;
     width: 280px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    position: relative;
 }
 
 .course:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 button {
     background-color: #E29500; /* Deep Gold */
     color: white;
     border: none;
-    padding: 12px 18px;
-    border-radius: 8px;
-    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
     background-color: #C47F00; /* Darker Deep Gold */
+    transform: translateY(-3px);
 }
 
 footer {
@@ -94,5 +110,5 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
 }
