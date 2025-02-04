@@ -1,23 +1,23 @@
-/* Updated styles.css - Premium Design Matching Approved Mobile Version */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(180deg, #F5F5F1, #EAEAEA); /* Subtle texture effect */
-    color: #333;
+    background: linear-gradient(180deg, #1F3A60, #EAEAEA); /* Metallic Gradient */
+    color: #FFF;
+    text-align: center;
 }
 
 header {
-    background-color: #1F3A60; /* Soft Navy */
+    background: url('path-to-texture.jpg') no-repeat center center/cover;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid #FFD700;
 }
 
 nav ul {
@@ -25,7 +25,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 nav ul li {
@@ -36,7 +36,8 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
 
@@ -44,71 +45,64 @@ nav ul li a:hover {
     color: #FFD700; /* Deep Gold */
 }
 
-section {
-    padding: 50px;
-    text-align: center;
-    background: white;
-    margin: 30px auto;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 85%;
-}
-
 .hero {
     background: url('path-to-texture.jpg') no-repeat center center/cover;
     color: white;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     border-radius: 15px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .course-list {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .course {
-    background: #EAEAEA;
+    background: rgba(255, 255, 255, 0.1);
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 50px;
     width: 280px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
-    position: relative;
+    border: 3px solid #FFD700;
+    font-weight: bold;
 }
 
 .course:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
 }
 
 button {
-    background-color: #E29500; /* Deep Gold */
+    background: radial-gradient(circle, #FFD700, #C47F00);
     color: white;
     border: none;
-    padding: 14px 20px;
-    border-radius: 10px;
-    font-size: 18px;
+    padding: 16px 22px;
+    border-radius: 50px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
 }
 
 button:hover {
-    background-color: #C47F00; /* Darker Deep Gold */
-    transform: translateY(-3px);
+    background: radial-gradient(circle, #E29500, #A36D00);
+    transform: scale(1.1);
 }
 
 footer {
-    background-color: #1F3A60; /* Soft Navy */
+    background: #1F3A60;
     color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
