@@ -1,17 +1,20 @@
-/* styles.css */
+/* Updated styles.css - Matching Approved Design */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #F5F5F1; /* Warm Sand */
     color: #333;
 }
 
 header {
-    background-color: #002244;
+    background-color: #1F3A60; /* Soft Navy */
     color: white;
     padding: 20px;
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -30,47 +33,66 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Deep Gold */
 }
 
 section {
-    padding: 40px;
+    padding: 50px;
     text-align: center;
     background: white;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
 }
 
 .course-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .course {
-    background: #e0e0e0;
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
+    background: #EAEAEA;
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.course:hover {
+    transform: scale(1.05);
 }
 
 button {
-    background-color: #ff6600;
+    background-color: #E29500; /* Deep Gold */
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-    background-color: #cc5500;
+    background-color: #C47F00; /* Darker Deep Gold */
 }
 
 footer {
-    background-color: #002244;
+    background-color: #1F3A60; /* Soft Navy */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
+    font-size: 14px;
 }
