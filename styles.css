@@ -1,17 +1,24 @@
+/* Final styles.css - Fully Matching Mobile-First Design */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(180deg, #1F3A60, #EAEAEA); /* Metallic Gradient */
+    background: linear-gradient(180deg, #1F3A60, #3B5875);
     color: #FFF;
     text-align: center;
 }
 
+.brand-logo {
+    width: 180px;
+    display: block;
+    margin: 20px auto;
+}
+
 header {
     background: url('path-to-texture.jpg') no-repeat center center/cover;
-    color: white;
     padding: 40px 20px;
     text-align: center;
     font-size: 32px;
@@ -28,10 +35,6 @@ nav ul {
     gap: 25px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -42,14 +45,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFD700; /* Deep Gold */
+    color: #FFD700;
 }
 
 .hero {
     background: url('path-to-texture.jpg') no-repeat center center/cover;
-    color: white;
     padding: 80px 20px;
-    text-align: center;
     font-size: 28px;
     font-weight: bold;
     border-radius: 15px;
@@ -72,14 +73,15 @@ nav ul li a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
     border: 3px solid #FFD700;
-    font-weight: bold;
+    position: relative;
 }
 
 .course:hover {
     transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-button {
+.cta-button {
     background: radial-gradient(circle, #FFD700, #C47F00);
     color: white;
     border: none;
@@ -91,9 +93,18 @@ button {
     transition: background 0.3s ease, transform 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-button:hover {
+.cta-button img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.cta-button:hover {
     background: radial-gradient(circle, #E29500, #A36D00);
     transform: scale(1.1);
 }
